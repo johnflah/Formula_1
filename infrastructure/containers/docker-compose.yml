@@ -5,7 +5,7 @@ services:
     image: mysql
     container_name: dev-db
     ports:
-      - "3306:3306"
+      - "33036:3306"
     environment:
       MYSQL_ROOT_PASSWORD: pass
       MYSQL_USER: admin_user
