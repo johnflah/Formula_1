@@ -1,4 +1,4 @@
-CREATE DATABASE f1db;
+
 USE f1db;
 
 CREATE TABLE `circuits` (
@@ -112,7 +112,7 @@ CREATE TABLE `races` (
                          `round` int(11) NOT NULL DEFAULT '0',
                          `circuitId` int(11) NOT NULL DEFAULT '0',
                          `name` varchar(255) NOT NULL DEFAULT '',
-                         `date` date NOT NULL DEFAULT '0000-00-00',
+                         `date` date NOT NULL DEFAULT '1979-01-01',
                          `time` time DEFAULT NULL,
                          `url` varchar(255) DEFAULT NULL,
                          `fp1_date` date DEFAULT NULL,
@@ -134,7 +134,7 @@ CREATE TABLE `results` (
                            `raceId` int(11) NOT NULL DEFAULT '0',
                            `driverId` int(11) NOT NULL DEFAULT '0',
                            `constructorId` int(11) NOT NULL DEFAULT '0',
-                           `number` int(11) cscNOT NULL DEFAULT '0',
+                           `number` int(11) NOT NULL DEFAULT '0',
                            `grid` int(11) NOT NULL DEFAULT '0',
                            `position` int(11) DEFAULT NULL,
                            `positionText` varchar(255) NOT NULL DEFAULT '',
